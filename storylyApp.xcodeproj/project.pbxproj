@@ -3,19 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FC68535A41424D32AB34A41 /* Pods_storylyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71D97D79CD2508FA5B2A7AC1 /* Pods_storylyApp.framework */; };
 		82830AD726BCA2C600FF5766 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82830AD626BCA2C600FF5766 /* AppDelegate.swift */; };
 		82830AD926BCA2C600FF5766 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82830AD826BCA2C600FF5766 /* SceneDelegate.swift */; };
 		82830ADB26BCA2C600FF5766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82830ADA26BCA2C600FF5766 /* ViewController.swift */; };
 		82830ADE26BCA2C600FF5766 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82830ADC26BCA2C600FF5766 /* Main.storyboard */; };
 		82830AE026BCA2CA00FF5766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82830ADF26BCA2CA00FF5766 /* Assets.xcassets */; };
 		82830AE326BCA2CA00FF5766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82830AE126BCA2CA00FF5766 /* LaunchScreen.storyboard */; };
+		82830AEF26BCA8A000FF5766 /* ViewStorylyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82830AEE26BCA8A000FF5766 /* ViewStorylyCell.xib */; };
+		82830AF126BCA94F00FF5766 /* ViewStorylyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82830AF026BCA94F00FF5766 /* ViewStorylyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71D97D79CD2508FA5B2A7AC1 /* Pods_storylyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_storylyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82830AD326BCA2C600FF5766 /* storylyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storylyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82830AD626BCA2C600FF5766 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82830AD826BCA2C600FF5766 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,11 @@
 		82830ADF26BCA2CA00FF5766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82830AE226BCA2CA00FF5766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82830AE426BCA2CA00FF5766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82830AEA26BCA44400FF5766 /* Storyly.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Storyly.xcframework; path = Pods/Storyly/Storyly.xcframework; sourceTree = "<group>"; };
+		82830AEE26BCA8A000FF5766 /* ViewStorylyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewStorylyCell.xib; sourceTree = "<group>"; };
+		82830AF026BCA94F00FF5766 /* ViewStorylyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStorylyCell.swift; sourceTree = "<group>"; };
+		95E3C92B116399CA87742F52 /* Pods-storylyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storylyApp.release.xcconfig"; path = "Target Support Files/Pods-storylyApp/Pods-storylyApp.release.xcconfig"; sourceTree = "<group>"; };
+		DFD84130410EC2EEDDDE52F3 /* Pods-storylyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-storylyApp.debug.xcconfig"; path = "Target Support Files/Pods-storylyApp/Pods-storylyApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FC68535A41424D32AB34A41 /* Pods_storylyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A56B7578558150AD4329B3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82830AEA26BCA44400FF5766 /* Storyly.xcframework */,
+				71D97D79CD2508FA5B2A7AC1 /* Pods_storylyApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82830ACA26BCA2C500FF5766 = {
 			isa = PBXGroup;
 			children = (
 				82830AD526BCA2C600FF5766 /* storylyApp */,
 				82830AD426BCA2C600FF5766 /* Products */,
+				BC1ECBDE54E60133FAEB783D /* Pods */,
+				5A56B7578558150AD4329B3E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +84,19 @@
 				82830ADF26BCA2CA00FF5766 /* Assets.xcassets */,
 				82830AE126BCA2CA00FF5766 /* LaunchScreen.storyboard */,
 				82830AE426BCA2CA00FF5766 /* Info.plist */,
+				82830AEE26BCA8A000FF5766 /* ViewStorylyCell.xib */,
+				82830AF026BCA94F00FF5766 /* ViewStorylyCell.swift */,
 			);
 			path = storylyApp;
+			sourceTree = "<group>";
+		};
+		BC1ECBDE54E60133FAEB783D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DFD84130410EC2EEDDDE52F3 /* Pods-storylyApp.debug.xcconfig */,
+				95E3C92B116399CA87742F52 /* Pods-storylyApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82830AE726BCA2CA00FF5766 /* Build configuration list for PBXNativeTarget "storylyApp" */;
 			buildPhases = (
+				530417F5527737E5D4ACEC8A /* [CP] Check Pods Manifest.lock */,
 				82830ACF26BCA2C600FF5766 /* Sources */,
 				82830AD026BCA2C600FF5766 /* Frameworks */,
 				82830AD126BCA2C600FF5766 /* Resources */,
+				49D9C24F680456D3BA0A33C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82830AE326BCA2CA00FF5766 /* LaunchScreen.storyboard in Resources */,
+				82830AEF26BCA8A000FF5766 /* ViewStorylyCell.xib in Resources */,
 				82830AE026BCA2CA00FF5766 /* Assets.xcassets in Resources */,
 				82830ADE26BCA2C600FF5766 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +167,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		49D9C24F680456D3BA0A33C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-storylyApp/Pods-storylyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-storylyApp/Pods-storylyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-storylyApp/Pods-storylyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		530417F5527737E5D4ACEC8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-storylyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		82830ACF26BCA2C600FF5766 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				82830ADB26BCA2C600FF5766 /* ViewController.swift in Sources */,
+				82830AF126BCA94F00FF5766 /* ViewStorylyCell.swift in Sources */,
 				82830AD726BCA2C600FF5766 /* AppDelegate.swift in Sources */,
 				82830AD926BCA2C600FF5766 /* SceneDelegate.swift in Sources */,
 			);
@@ -283,6 +361,7 @@
 		};
 		82830AE826BCA2CA00FF5766 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD84130410EC2EEDDDE52F3 /* Pods-storylyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +381,7 @@
 		};
 		82830AE926BCA2CA00FF5766 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95E3C92B116399CA87742F52 /* Pods-storylyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="viewStorylyCell" rowHeight="135" id="Fpw-JJ-dRu" customClass="ViewStorylyCell" customModule="storylyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fpw-JJ-dRu" id="FgB-fD-8Hn">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gtg-DC-Z45" customClass="StorylyView">
+                        <rect key="frame" x="0.0" y="3" width="414" height="132"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gtg-DC-Z45" firstAttribute="leading" secondItem="FgB-fD-8Hn" secondAttribute="leading" id="2RT-84-X83"/>
+                    <constraint firstAttribute="bottom" secondItem="gtg-DC-Z45" secondAttribute="bottom" id="N63-CY-LFe"/>
+                    <constraint firstAttribute="trailing" secondItem="gtg-DC-Z45" secondAttribute="trailing" id="NYA-C9-3bc"/>
+                    <constraint firstItem="gtg-DC-Z45" firstAttribute="top" secondItem="FgB-fD-8Hn" secondAttribute="top" constant="3" id="pFU-f9-BcX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="storylyView" destination="gtg-DC-Z45" id="WSj-XY-Vnc"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="-116.18303571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
